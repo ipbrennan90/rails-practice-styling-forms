@@ -41,6 +41,16 @@
   </div>
   <div class="form-group">
     <div class="col-sm-4 col-sm-offset-2">
+      <div class="checkbox">
+        <label>
+          <%= f.check_box :active %>
+          Active
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-4 col-sm-offset-2">
       <%= f.submit class: "btn btn-info" %>
       <%= link_to "cancel", people_path, class: "btn btn-default" %>
     </div>
