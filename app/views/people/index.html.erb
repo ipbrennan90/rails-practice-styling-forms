@@ -1,6 +1,11 @@
-<h1>Listing people</h1>
+<div class="page-header">
+  <div class="pull-right">
+    <%= link_to 'New Person', new_person_path, class: "btn btn-info" %>
+  </div>
+  <h1>Listing people</h1>
+</div>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>First name</th>
@@ -10,7 +15,6 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-
   <tbody>
     <% @people.each do |person| %>
       <tr>
@@ -26,10 +30,6 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Person', new_person_path %>
 
 <div class="well example">
   <p>
